@@ -40,26 +40,29 @@ Full Web Stack for deploying PHP and Nodejs Applications
 ## Installation
 ####This setup is based and tested with Cent OS 6 x64 base box, with Vagrant 1.5.2 version
 
-* Install Vagrant using the [installation instructions](http://docs.vagrantup.com/v2/installation/index.html)
+- Install Vagrant using the [installation instructions](http://docs.vagrantup.com/v2/installation/index.html)
 
-* Install Ansible using the [installation instructions](http://docs.ansible.com/intro_installation.html#installation) 
+- Install Ansible using the [installation instructions](http://docs.ansible.com/intro_installation.html#installation)
 
-* Clone this repository
+- Clone this repository
+
 	    $ https://github.com/guillermojmc/vagrant-lnmmnp.git
 
-* Add the box to vagrant. ( [direct link](https://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.5-x86_64-v20140504.box) )
+- Add the box to vagrant. ( [direct link](https://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.5-x86_64-v20140504.box) )
+
 		vagrant box add https://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.5-x86_64-v20140504.box --name centos64
 
-* run vagrant (for the first time it should take up to 15-30 min)
+- run vagrant (for the first time it should take up to 15-30 min)
+
 	    $ vagrant up
 
-* Setup Local Domain
-	* Modify your host files for
+- Setup Local Domain
+	- Modify your host files for
 			sudo vi /etc/hosts
-	* Add the new record (IP)
+	- Add the new record (IP)
 			33.33.33.100 local.dev
 
-* Web server is accessible with http://33.33.33.100 and http://local.dev (IP address can be changed in Vagrantfile)
+- Web server is accessible with http://33.33.33.100 and http://local.dev (IP address can be changed in Vagrantfile)
 
 
 ## Ansible Configuration
