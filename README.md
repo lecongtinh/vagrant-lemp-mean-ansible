@@ -1,5 +1,7 @@
 #Vagrant *lemp + node + mongodb* Development setup
 
+#Using Ansible
+
 >**Linux - Nginx - MySQL - PHP - MongoDB - Nodejs**
 
 ============================================
