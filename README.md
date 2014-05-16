@@ -40,7 +40,9 @@ Full Web Stack for deploying PHP and Nodejs Applications
 ## Installation
 ####This setup is based and tested with Cent OS 6 x64 base box, with Vagrant 1.5.2 version
 
-* Install Vagrant using using the [installation instructions](http://docs.vagrantup.com/v2/installation/index.html)
+* Install Vagrant using the [installation instructions](http://docs.vagrantup.com/v2/installation/index.html)
+
+* Install Ansible using the [installation instructions](http://docs.ansible.com/intro_installation.html#installation) 
 
 * Clone this repository
 	    $ https://github.com/guillermojmc/vagrant-lnmmnp.git
