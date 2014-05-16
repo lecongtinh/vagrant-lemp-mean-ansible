@@ -1,0 +1,4 @@
+---
+- name: phpMyAdmin | Add Repository
+  yum: name=phpMyAdmin state=latest enablerepo=remi
+  # command: rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm

@@ -1,0 +1,13 @@
+---
+- name: Copy the MongoDB repository
+  copy: src=mongodb.repo dest=/etc/yum.repos.d/mongodb.repo
+
+- name: MongoDB | Install latest mongodb
+  sudo: yes
+  yum: name=mongodb-org state=latest
+  tags: mongodb
+
+- name: MongoDB | Run mongo daemon
+  sudo: yes
+  service: name=mongod state=started
+  tags: mongodb

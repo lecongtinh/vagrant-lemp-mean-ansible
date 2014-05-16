@@ -1,0 +1,10 @@
+---
+- name: Node.js | Install
+  sudo: yes
+  yum: name=nodejs state=latest
+  tags: nodejs
+
+- name: Node.js | Install NPM
+  sudo: yes
+  yum: name=npm state=latest
+  tags: nodejs

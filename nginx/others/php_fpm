@@ -1,0 +1,8 @@
+# PHP_FPM common config
+fastcgi_index 						index.php;
+fastcgi_pass 						127.0.0.1:9000;                
+
+include /etc/nginx/fastcgi_params;
+
+fastcgi_param SCRIPT_FILENAME 		$document_root$fastcgi_script_name;
+fastcgi_param SCRIPT_NAME 			$fastcgi_script_name;

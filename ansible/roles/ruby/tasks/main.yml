@@ -1,0 +1,6 @@
+---
+- name: Ruby | Install Ruby
+  sudo: yes
+  tags: ruby
+  shell:
+    \curl -sSL https://get.rvm.io | bash -s stable --ruby

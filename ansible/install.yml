@@ -1,0 +1,32 @@
+---
+- hosts: vagrant
+  sudo: yes
+  roles:
+
+# Basics
+  - common
+  - swap
+
+# Server
+  - nginx
+  - varnish
+  - nodejs
+
+# Databases and utilities
+  - mysql
+  - phpmyadmin
+  - mongodb
+  - rockmongo
+  - redis
+
+# Languages, Platforms and utilities
+  - ruby
+  - php-fpm-55
+  - composer
+  # - gearman
+  # - rabbitmq
+
+  - yo
+  - express
+
+  # - pruebas

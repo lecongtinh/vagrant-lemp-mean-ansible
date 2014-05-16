@@ -1,0 +1,12 @@
+---
+- name: RockMongo | download
+  sudo: yes
+  command: wget http://rockmongo.com/downloads/go?id=12
+
+- name: RockMongo | unzip
+  sudo: yes
+  command: unzip rockmongo-1.1.5.zip -d /usr/share/
+
+- name: RockMongo | rm zip
+  sudo: yes
+  command: rm rockmongo-1.1.5.zip
